@@ -6,7 +6,7 @@ void Phan_Tich_Thua_So(int n)
     for(int i = 2; i <= n; i++)
     {
         count = 0;
-        while(n % 2 == 0)
+        while(n % i == 0)
         {
             count++;
             n /= i;
@@ -21,11 +21,12 @@ void Phan_Tich_Thua_So(int n)
             {
                 printf("%d", i);
             }
+            if(n > 1)
+            {
+                printf(" * ");
+            }
         }
-        if(n > 1)
-        {
-            printf(" * ");
-        }
+        
     }
 }
 
